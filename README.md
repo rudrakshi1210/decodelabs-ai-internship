@@ -1,11 +1,14 @@
-# decodelabs-ai-internship
-**Internship Batch: 2026 | DecodeLabs**
+---
+
+## Project 2: Supervised Data Classification (Iris Benchmark)
+**Focus:** Supervised Learning, Preprocessing, and Pattern Recognition
 
 ### Overview
-A deterministic, rule-based AI chatbot built using Python for Project 1. It utilizes an infinite loop, string sanitization, and dictionary key-value lookups with fallback handling.
+A machine learning classification pipeline that predicts Iris flower species using the K-Nearest Neighbors (KNN) algorithm.
 
 ### Key Features
-- Continuous conversation loop (`while True`)
-- Case and whitespace sanitization (`.lower().strip()`)
-- Intent mapping with fallback handling (`.get()`)
-- Clean exit commands
+- **Dataset:** 150 samples, 4 continuous flower features, 3 target classes
+- **Preprocessing:** 80/20 train-test split with data shuffling
+- **Scaling:** Feature normalization via `StandardScaler` (Mean = 0, Variance = 1)
+- **Model:** KNN Classifier ($K=5$)
+- **Evaluation:** Evaluated using Accuracy, Confusion Matrix, and F1 Score
