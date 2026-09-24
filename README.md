@@ -1,14 +1,13 @@
 ---
 
-## Project 2: Supervised Data Classification (Iris Benchmark)
-**Focus:** Supervised Learning, Preprocessing, and Pattern Recognition
+## Project 3: AI Recommendation Logic (Tech Stack Matchmaker)
+**Focus:** Content-Based Filtering, Vector Space Modeling, and Cosine Similarity
 
 ### Overview
-A machine learning classification pipeline that predicts Iris flower species using the K-Nearest Neighbors (KNN) algorithm.
+An intelligent matchmaking engine that ingests user skills and career interests, converts unstructured metadata into TF-IDF vector representations, and ranks the Top 3 relevant career paths using angular Cosine Similarity.
 
 ### Key Features
-- **Dataset:** 150 samples, 4 continuous flower features, 3 target classes
-- **Preprocessing:** 80/20 train-test split with data shuffling
-- **Scaling:** Feature normalization via `StandardScaler` (Mean = 0, Variance = 1)
-- **Model:** KNN Classifier ($K=5$)
-- **Evaluation:** Evaluated using Accuracy, Confusion Matrix, and F1 Score
+- **4-Step Engine Pipeline:** Ingestion, TF-IDF Scoring, Descending Sorting, and Top-N Filtering
+- **Similarity Metric:** Cosine Similarity invariant to vector magnitude
+- **Dataset:** `raw_skills.csv` mapping industry roles to tool stacks
+- **Bypasses:** Handles Cold Start scenarios with baseline profile defaults
